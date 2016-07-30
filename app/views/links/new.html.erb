@@ -1,0 +1,13 @@
+<h1> Links </h1>
+
+<%= form_for @link, url: {action: "create"}, html: do |f| %>
+<%= label_tag :name %>
+<%= f.text_field :title %>
+<%= label_tag :links %>
+<%= f.text_area :body  %>
+<%= f.submit "Create" %>
+
+
+<% end %>
+
+<!-- form_helpers from guides.rubyonrails.org -->
