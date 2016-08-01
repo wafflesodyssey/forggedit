@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
+  root 'welcome#index'
 
   resources :users
   resources :sessions
   resources :links
-
-  root 'users#new'
+  # resources does fucking magic son. rake routes in terminal to see it to believe it son!
 
 
 
