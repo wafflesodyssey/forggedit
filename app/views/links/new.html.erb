@@ -1,10 +1,10 @@
 <h1> Links </h1>
 
-<%= form_for @link, url: {action: "create"}, html: do |f| %>
+<%= form_for @link, url: {action: "create"} do |f| %>
 <%= label_tag :name %>
-<%= f.text_field :title %>
+<%= f.text_field :name %>
 <%= label_tag :links %>
-<%= f.text_area :body  %>
+<%= f.text_field :url  %>
 <%= f.submit "Create" %>
 
 
